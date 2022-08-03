@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    max-width: 90%; height: 550px;
+    border: solid 2px hsl(226, 43%, 10%);
+    background-color: hsl(226, 43%, 10%);
+}
+
+.first-div{
+    max-width: 60%;
+    height: 370px;
+    /* border: solid 1px black; */
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+/* This is the big box containing the presenter */
+
+.box1{
+    width: 25%; height: 400px;
+    /* border: solid red 1px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-box1{
+    width: 100%; height: 250px;
+    /* border: solid 4px yellow; */
+    padding-left: 15px; 
+    padding-top: 15px;
+    background-color: hsl(235, 45%, 61%);
+    border-radius: 10px;
+    border: 10px;
+    z-index: 11;
+    /* position: relative; */
+}
+
+h1{
+    color: white;
+    font-family: rubik;
+    font-weight: 100;
+    padding-top: 10px;
+}
+p{
+    color: white;
+    font-family: rubik;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.inner-box2{
+    max-width: 100%; height: 180px;
+    /* border: 1px solid brown; */
+    background-color: hsl(235, 46%, 20%);
+    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+    transform: translateY(-30px);
+    /* position: absolute; */
+    /* z-index: -1; */
+    padding-top: 40px; 
+    padding-left: 15px;
+}
+
+/* The big box containing the work, play, study etc */
+.upper-box{
+    width: 75%; height: 400px;
+    /* border: solid 2px olivedrab; */
+    /* display: flex; */
+    /* margin-left: 10px; */
+}
+
+/* box containing work, play, study */
+.sub-upper1{
+    /* border: solid 1px red; */
+    width: 100%; height: 200px;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+/* WORK BOX */
+.work{
+    width: 33.3%; height: 200px;
+    margin-left: 15px;
+    /* border: 1px solid red; */
+}
+
+.work1{
+    width: 100%; height: 70px;
+    background-color: hsl(15, 100%, 70%);
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+.work2{
+    width: 100%; height: 130px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    transform: translateY(-30px);
+    padding: 15px;
+}
+
+.img-work{
+    width: 100%; height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
+    transform: translateY(-1px);
+}
+
+.work-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* PLAY BOX */
+.play{
+    width: 33.3%; height: 200px;
+    margin-left: 15px;
+    /* border: 3px solid gold; */
+}
+
+.play1{
+    width: 100%; height: 70px;
+    background-color: hsl(195, 74%, 62%);
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+.play2{
+    width: 100%; height: 130px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    transform: translateY(-30px);
+    padding: 15px;
+}
+
+.play-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-play{
+    width: 100%; height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
+    transform: translateY(-1px);
+}
+
+/* style for study box */
+.study{
+    width: 33.3%; height: 200px;
+    margin-left: 15px;
+    /* border: 3px solid green; */
+}
+
+.study1{
+    width: 100%; height: 70px;
+    background-color: hsl(348, 100%, 68%);
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+.study2{
+    width: 100%; height: 130px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    transform: translateY(-30px);
+    padding: 15px;
+}
+
+.study-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-study{
+    width: 100%; height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
+    transform: translateY(-1px);
+}
+
+/* box containing exersice, social & self-care */
+.sub-upper2{
+    /* border: solid 1px orangered; */
+    width: 100%; height: 200px;
+    display: flex;
+    /* background-color: black; */
+}
+
+/* style for exercise box */
+.exercise{
+    width: 33.3%; height: 200px;
+    margin-left: 15px;
+    /* border: 3px solid green; */
+}
+
+.exercise1{
+    width: 100%; height: 70px;
+    background-color: hsl(145, 58%, 55%);
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+.exercise2{
+    width: 100%; height: 130px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    transform: translateY(-35px);
+    padding: 15px;
+}
+
+.exercise-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-exercise{
+    width: 100%; height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
+    transform: translateY(-1px);
+}
+
+/* style for social box */
+.social{
+    width: 33.3%; height: 200px;
+    margin-left: 15px;
+    /* border: 3px solid blue; */
+}
+
+.social1{
+    width: 100%; height: 70px;
+    background-color: hsl(264, 64%, 52%);
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+.social2{
+    width: 100%; height: 130px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    transform: translateY(-35px);
+    padding: 15px;
+}
+
+.social-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-social{
+    width: 100%; height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
+    transform: translateY(-1px);
+}
+
+/* style for social box */
+.self{
+    width: 33.3%; height: 200px;
+    margin-left: 15px;
+    /* border: 3px solid red; */
+}
+
+.self1{
+    width: 100%; height: 70px;
+    background-color: hsl(43, 84%, 65%);
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+.self2{
+    width: 100%; height: 130px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    transform: translateY(-35px);
+    padding: 15px;
+}
+
+.self-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-self{
+    width: 100%; height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
+    transform: translateY(-1px);
+}
